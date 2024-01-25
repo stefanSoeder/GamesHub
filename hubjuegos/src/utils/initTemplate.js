@@ -1,9 +1,12 @@
+import { PrintTemplateHeader, PrintTemplateFooter } from "../components";
 export const initTemplate = () => {
-  const app = document.getElementById("app");
-
-  const header = document.createElement("header");
-  const main = docuemt.createElement("main");
+  /**Definición de la función */
+  const app = document.getElementById("app"); //**Para indicar al app que nos referimos al elemento "app" */
+  const header = document.createElement("header"); //**Creamos los elementos HTML */
+  const main = document.createElement("main");
   const footer = document.createElement("footer");
-
-  app.append(header, main, footer);
+  app.append(header, main, footer); //*Utilizamos el método .append para inyectar los elementos dentro de "app"
 };
+
+PrintTemplateHeader();
+PrintTemplateFooter();
