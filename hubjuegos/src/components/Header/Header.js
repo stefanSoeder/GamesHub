@@ -28,6 +28,7 @@ const template = () =>
   `;
 const addListeners = () => {}; //**PAra añadir eventos */
 export const PrintTemplateHeader = () => {
+  console.log(document.querySelector("header"));
   document.querySelector("header").innerHTML = template();
   addListeners();
 }; //**inyecta el HTML generado por TEMPLATE en el Header del DOM y llama a addlisteners (eventos)*/

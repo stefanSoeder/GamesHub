@@ -1,5 +1,5 @@
 // main.js
-import { initTemplate } from "./src/utils/initTemplate";
+import { initControler, initTemplate } from "./src/utils/initTemplate";
 import "./style.css";
 
 initTemplate();
