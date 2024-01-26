@@ -1,2 +1,3 @@
-export * from "./initTemplate"; //**Archivo de BARRIL para importar de forma constante */
+export * from "./initTemplate"; //**Archivos de BARRIL para importar de forma constante */
 export * from "./route";
+export * from "./changeColor";

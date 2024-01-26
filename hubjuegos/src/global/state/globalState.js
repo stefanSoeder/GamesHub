@@ -26,8 +26,7 @@ let userData = localStorage.getItem(currentUser.name)
 
 // ------------------> DATA GLOBAL DE LA APLICACION--------
 /**En este caso es donde se van a guardar los datos que vengan de las API y que vamos a utilizarlos en
- * los diferentes apartados de la app: por ejemplo si tuvieramos dos paginas una de pokemon y otra de ricky
- * morty en este caso en cada clave guardariamos el valor de los datos de cada página.
+ * los diferentes apartados de la app.
  */
 const dataGlobal = {
   pokemon: [],

@@ -1,6 +1,6 @@
 /* style.css*/
 
-* { //**Reseteamos el CSS usando el asterisco como selector global, y poniendo padding y margin a 0*/
+* {                    
   padding: 0;
   margin: 0;
   box-sizing: border-box;

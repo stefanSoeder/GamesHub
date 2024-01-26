@@ -1,7 +1,7 @@
 import { initControler } from "../../utils";
 import "./Dashboard.css"; /** Importamos estilo*/
 
-const template = () => `//**creamos template con fragmento HTML*/
+const template = () => ` 
 <div id="containerDashboard">
     <ul>
       <li>
