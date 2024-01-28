@@ -2,11 +2,11 @@ import { setUser, setUserData } from "../../global/state/globalstate";
 import { initControler } from "../../utils/route";
 import "./Login.css";
 const template = () => `
-  <div id="containerLogin">
-    <h1 id="titleLogin">LOGIN</h1>
-    <input type="text" name="username" id="username" />
-    <button id="buttonLogin">enviar</button>
-  </div>
+<div id="containerLogin">
+  <h1 id="titleLogin">¿Pero Usté quién es?</h1>
+  <input type="text" name="username" id="username" placeholder="Correo de alta en Neoland" />
+  <button id="buttonLogin" >Acceder</button>
+</div>
 `;
 
 const addListeners = () => {

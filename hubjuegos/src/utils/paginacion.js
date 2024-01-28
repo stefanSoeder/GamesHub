@@ -20,11 +20,11 @@ export const Paginacion = (data, numberElement) => {
   document.getElementById("paginacion").innerHTML = "";
 
   /** Pero hay que ponerle una condicion y es que si el numero de paginas que se guarda en la
-   * variable numberDigitOfPage es menor 1 o menor no se va rendirizar paginado sino normal
+   * variable numberDigitOfPage es 1 o menos, no se va rendirizar paginado sino normal.
    * Solo cuando es mayor que 1 se va a paginar
    */
   if (numberDigitOfPage > 1) {
-    /** Si el numero de paginas es mayor que 1 lo que vamos a hacer es crear un botton por
+    /** Si el numero de paginas es mayor que 1, lo que vamos a hacer es crear un botton por
      * cada pagina y le añadimos una clase con el i del bucle mas 1 , y tambien buttonPaginacion
      * para asi luego poder darle estilos a la pagina en la que nos encontramos actualmente
      * que lo veremos en el escuchador de estos botones como modificamos estos estilos

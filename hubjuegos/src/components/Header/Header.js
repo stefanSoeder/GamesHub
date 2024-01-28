@@ -64,7 +64,7 @@ const addListeners = () => {
      * porque es el token lo que nos da el ok o no en nuestra aplicacion
      *
      * Es una simulacion para luego cuando estemos en el back nos sea mucho mas sencillo entender que
-     * para las request al back que necesiten autenticacion necesitaremos un token valido.
+     * para las request al back, que necesiten autenticacion, necesitaremos un token válido.
      */
     const userState = getUser().name;
     const currentUser = localStorage.getItem(userState);
