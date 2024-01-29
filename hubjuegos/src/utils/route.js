@@ -1,5 +1,10 @@
-import { getUser } from "../global/state/globalstate";
-import { Login, PrintPokemonPage, printTemplateDashboard } from "../pages";
+import { getUser } from "../global/state/globalState";
+import {
+  Login,
+  PrintPokemonPage,
+  printTemplateDashboard,
+  printTopoPage,
+} from "../pages";
 /// estas paginas se haran en el punto 6 ------> Login, PrintPokemonPage, printTemplateDashboard
 
 //! ----------------------------------------------------------------------------------------------------------------------
@@ -10,6 +15,9 @@ export const initControler = (pagesRender) => {
   switch (pagesRender) {
     case undefined:
       localStorage.getItem(getUser().name) ? printTemplateDashboard() : Login();
+      break;
+    case "Login":
+      Login();
       break;
     case "Pokemon":
       PrintPokemonPage();

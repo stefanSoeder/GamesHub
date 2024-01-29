@@ -19,7 +19,7 @@ export const CardsPokemons = (data) => {
    *
    *
    * Pero antes de eso fijaros que el boton del favorite que es un span tiene una clase dinamica con un
-   * ternario en el que en caso de incluir el id de este pokemon en el aray de fav del usuario del contesto
+   * ternario en el que en caso de incluir el id de este pokemon en el array de fav del usuario del contesto
    * el cual se encuentra logado ponerle la clase de  like y luego por css todos los que tengan like
    * le ponemos el corazon en rojo, sino se queda el simbolo del corazon en su color original
    */
