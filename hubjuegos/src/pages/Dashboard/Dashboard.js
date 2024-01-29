@@ -24,12 +24,12 @@ const template = () => `
         </figure>
       </li>
       <li>
-        <figure>
+        <figure id="navigateQuiz">
           <img
             src="https://res.cloudinary.com/dq186ej4c/image/upload/v1689761735/6168776_kfna36.png"
-            alt="go to memory game"
+            alt="go to fantasy quiz game"
           />
-          <h2>AHORCADO</h2>
+          <h2>QUIZ</h2>
         </figure>
       </li>
     </ul>
@@ -47,6 +47,10 @@ const addEventListeners = () => {
   const navigateWackaTopo = document.getElementById("navigateWackaTopo");
   navigateWackaTopo.addEventListener("click", () => {
     initControler("Topo");
+  });
+  const navigateQuiz = document.getElementById("navigateQuiz");
+  navigateQuiz.addEventListener("click", () => {
+    initControler("Quiz");
   });
 };
 

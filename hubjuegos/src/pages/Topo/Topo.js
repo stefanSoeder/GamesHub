@@ -1,25 +1,25 @@
 import {
   setIntervalTopo,
   setIntervalTopoTimer,
-} from "../../global/state/globalState";
+} from "../../global/state/moleState";
 import "./Topo.css";
 
 const mole = document.querySelector(".mole");
 
 let result = 0;
 let hitPosition;
-let currentTime = 60;
+let currentTime = 30;
 let timerId = null;
 let countDownTimerId;
 const template = () => `
   <div id="Topo">
-  <h1 id="titulo">WHAC A MOLE</h1>
+  <h1 id="titulo">WHACK A MOLE</h1>
     <div class="components">
       <h2 id="yourscore">Your score:</h2>
       <h2 id="score">0</h2>
 
       <h2 id="time">Time Left:</h2>
-      <h2 id="time-left">60</h2>
+      <h2 id="time-left">30</h2>
    </div>
   <div class="grid">
     <div class="square" id="1"></div>
@@ -85,7 +85,7 @@ const countDown = (countDownTimerId) => {
 };
 
 export const printTopoPage = () => {
-  currentTime = 60;
+  currentTime = 30;
   result = 0;
   document.querySelector("main").innerHTML = template();
   document.querySelector("nav").style.display = "flex";
