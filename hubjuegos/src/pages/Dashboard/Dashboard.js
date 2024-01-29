@@ -26,10 +26,10 @@ const template = () => `
       <li>
         <figure id="navigateQuiz">
           <img
-            src="https://res.cloudinary.com/dq186ej4c/image/upload/v1689761735/6168776_kfna36.png"
+            src="https://res.cloudinary.com/dhu1it9x8/image/upload/v1706558125/libros-de-texto_nuzhc0.png"
             alt="go to fantasy quiz game"
           />
-          <h2>QUIZ</h2>
+          <h2>FANTASY QUIZ</h2>
         </figure>
       </li>
     </ul>

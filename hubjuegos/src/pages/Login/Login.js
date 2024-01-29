@@ -1,11 +1,11 @@
-import { setUser, setUserData } from "../../global/state/globalstate";
+import { setUser, setUserData } from "../../global/state/globalState";
 import { initControler } from "../../utils/route";
 import "./Login.css";
 const template = () => `
 <div id="containerLogin">
-  <h1 id="titleLogin">¿Pero Usté quién es?</h1>
-  <input type="text" name="username" id="username" placeholder="Correo de alta en Neoland" />
-  <button id="buttonLogin" >Acceder</button>
+  <h1 id="titleLogin">Bienvenido, </h1>
+  <input type="text" name="username" id="username" placeholder="Estudiante" />
+  <button id="buttonLogin" >Entrar</button>
 </div>
 `;
 

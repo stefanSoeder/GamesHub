@@ -56,15 +56,16 @@
   
   #previous{
     display: flex;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background: #35af5891;
+    color: rgb(73, 27, 94);
     align-self: flex-start;
     position: fixed;
     
   }
   #next{
     display: flex;
-    background-color:  rgb(255, 255, 255);
+    color: white;
+    background-color:  #7140b5;
     align-self: flex-end;
     position: fixed;
   }

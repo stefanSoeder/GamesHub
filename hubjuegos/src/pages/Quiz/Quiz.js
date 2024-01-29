@@ -131,7 +131,7 @@ const preguntasRespuestas = [
   },
 ];
 
-let index = 1;
+let index = 0;
 let score = 0;
 let preguntasRespondidas = [];
 
