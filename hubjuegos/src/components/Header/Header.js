@@ -9,7 +9,7 @@ import "./Header.css";
 
 const template = () => `
   <img
-    src="https://res.cloudinary.com/dhu1it9x8/image/upload/v1706557886/mago_izla51.png"
+    src="https://res.cloudinary.com/dhu1it9x8/image/upload/v1706566872/FantasyHub_bkop7g.png"
     alt="title hub game website (app)"
     class="logo"
   />

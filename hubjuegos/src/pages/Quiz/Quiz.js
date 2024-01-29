@@ -35,7 +35,7 @@ const preguntasRespuestas = [
     respuesta2: "C.S. Lewis",
     respuesta3: "Philip Pullman",
     respuesta4: "Neil Gaiman",
-    correcta: "respuesta4",
+    correcta: "respuesta2",
   },
   {
     pregunta:
@@ -152,11 +152,13 @@ const template = () => `
   `;
 
 const updatePreviousButtonVisibility = () => {
+  //*hace que se vea la opción de retroceder cuando el index no es 0*/
   const navigatePrevious = document.getElementById("previous");
   navigatePrevious.style.display = index === 0 ? "none" : "flex";
 };
 
 const addEventListeners = () => {
+  //*botón de retroceder, permitiendo cargar pregunta anterior, y actualizando visibilidad*/
   const navigatePrevious = document.getElementById("previous");
   navigatePrevious.addEventListener("click", () => {
     if (index > 0) {
@@ -166,14 +168,15 @@ const addEventListeners = () => {
     }
   });
 
-  const navigateNext = document.getElementById("next");
+  const navigateNext = document.getElementById("next"); //*Igual para opción NEXT*/
   navigateNext.addEventListener("click", () => {
     index = getNextIndex(preguntasRespuestas.length);
     loadQuestion();
     updatePreviousButtonVisibility();
   });
 
-  const respuestaUno = document.getElementById("r1");
+  const respuestaUno = document.getElementById("r1"); //*los botones para seleccionar respuesta, se ejecuta función checkAnswer*/
+  //para ver si es correcta*/
   respuestaUno.addEventListener("click", () => {
     checkAnswer("respuesta1");
   });
@@ -256,10 +259,12 @@ const loadQuestion = () => {
 };
 
 const checkAnswer = (answer) => {
+  //*función que comprueba si la respuesta es o no correcta*/
   const respuestaCorrecta = preguntasRespuestas[index].correcta;
   const buttons = document.querySelectorAll(".answer-btn");
 
   buttons.forEach((button) => {
+    //*Cómo comportarse en caso de respuesta correcta/incorrecta; colores y mensaje"
     button.setAttribute("disabled", true);
     if (button.getAttribute("data-answer") === respuestaCorrecta) {
       button.style.backgroundColor = "green";
@@ -274,13 +279,14 @@ const checkAnswer = (answer) => {
   });
 
   if (answer === respuestaCorrecta) {
-    document.getElementById("solution").innerText = "CORRECTO!";
+    document.getElementById("solution").innerText = "¡Eso es!";
     document.getElementById("solution").style.color = "green";
     score++;
     document.getElementById("score").innerText = score;
     console.log("indice actual:", index);
   } else {
-    document.getElementById("solution").innerText = "INCORRECTO";
+    document.getElementById("solution").innerText =
+      "¡Oooh respuesta incorrecta!";
     document.getElementById("solution").style.color = "red";
   }
 };

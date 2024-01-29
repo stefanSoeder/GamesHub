@@ -17,10 +17,10 @@ const template = () => `
       <li>
         <figure id="navigateWackaTopo">
           <img
-            src="https://res.cloudinary.com/dq186ej4c/image/upload/v1689761641/pngwing.com_1_iq8zfk.png"
+            src="https://res.cloudinary.com/dhu1it9x8/image/upload/v1706571815/DragonShooter_yujgs2.png"
             alt=" go to wacka topo game"
           />
-          <h2>WACKA TOPO</h2>
+          <h2>DRAGON SHOOOTER</h2>
         </figure>
       </li>
       <li>

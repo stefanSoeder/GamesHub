@@ -1,7 +1,7 @@
 import {
   setIntervalTopo,
   setIntervalTopoTimer,
-} from "../../global/state/moleState";
+} from "../../global/state/globalState";
 import "./Topo.css";
 
 const mole = document.querySelector(".mole");
@@ -16,9 +16,9 @@ const template = () => `
   <h1 id="titulo">WHACK A MOLE</h1>
     <div class="components">
       <h2 id="yourscore">Your score:</h2>
-      <h2 id="score">0</h2>
+      <h2 id="score">0</h2>  
 
-      <h2 id="time">Time Left:</h2>
+            <h2 id="time">Time Left:</h2>
       <h2 id="time-left">30</h2>
    </div>
   <div class="grid">
