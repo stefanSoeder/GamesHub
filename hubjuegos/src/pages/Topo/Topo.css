@@ -23,7 +23,7 @@
 	max-width: 180px;
 	max-height: 180px;
 
-	border: solid black 1px;
+	border: solid rgb(0, 0, 0) 1px;
 }
 
 #titulo{

@@ -93,6 +93,11 @@ export const setUserData = (data) => {
   localStorage.setItem(`${currentUser.name}`, stringUser);
 };
 
+const interval = {
+  topo: "",
+  topoTime: "",
+};
+
 export const getUserData = () => {
   return userData;
 };

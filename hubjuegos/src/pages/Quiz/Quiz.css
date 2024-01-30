@@ -71,6 +71,15 @@
     align-self: flex-end;
     position: fixed;
   }
+
+  #submit{
+    display: flex;
+    color: white;
+    background-color:  #cd7116;
+    align-self: flex-end;
+    position: fixed;
+  }
+  
   #solution{
     justify-content: center;
     align-items: center;

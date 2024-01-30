@@ -218,6 +218,10 @@ const congratulationsTemplate = () => `
 
 const loadQuestion = () => {
   if (index === preguntasRespuestas.length) {
+    console.log(
+      "🚀 ~ loadQuestion ~ preguntasRespuestas.length:",
+      preguntasRespuestas.length
+    );
     document.querySelector("#Quiz").style.display = "none";
     const scoreElement = document.querySelector(".score");
     const congratulationsElement = document.createElement("div");
