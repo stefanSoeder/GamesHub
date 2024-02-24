@@ -53,7 +53,7 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    font-size: 36px;
+    font-size: 52px;
   }
   
   #previous{
@@ -73,6 +73,14 @@
   }
 
   #submit{
+    display: flex;
+    color: white;
+    background-color:  #cd7116;
+    align-self: flex-end;
+    position: fixed;
+  }
+
+  #restartButton{
     display: flex;
     color: white;
     background-color:  #cd7116;

@@ -34,7 +34,7 @@ header {
       object-fit: cover;
       @media (max-width: 600px) {
         width: 30vw;
-        height: 10vh;
+        height: 20vh;
       }
   
       @media (min-width: 601px) {
